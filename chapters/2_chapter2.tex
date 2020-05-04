@@ -28,8 +28,7 @@
 \subsection{事件视界}
 黑洞的视界是使黑洞称为黑洞的区域，视界以内的信息都无法向外传递，因为没有向外的路径存在。本文研究的限制在视界以外的区域(exterior)。
 \subsection{引力透镜}
-黑洞（事件视界）根据无毛定理，任何信息都不能从视界上发射出来\footnote{不考虑量子力学}，导致黑洞本身是不能被看到的。但黑洞会扭曲周围的时空，通过观察周围物质的运动可以“看”到黑洞。\\
-黑洞就像一个圆形或者近似圆形透镜，会使远处传来的平行光产生偏折。
+黑洞（事件视界）根据无毛定理，任何信息都不能从视界上发射出来\footnote{不考虑量子力学}，导致黑洞本身是不能被看到的。但黑洞会扭曲周围的时空，通过观察周围物质的运动可以「看」到黑洞。黑洞就像一个圆形或者近似圆形透镜，会使远处传来的平行光产生偏折。
 
 \section{描述弯曲的时空}
 \subsection{时间与空间}
@@ -44,7 +43,7 @@
 \paragraph{Timelike 测地线}
 光锥之内的测地线称为Timelike 测地线，是有静质量的物体在时空中自由落体所走的路径。
 \paragraph{Null 测地线}
-当引力场中测试粒子质量降为0时，如光子，在时空运动的轨迹。也就是光锥本身。
+当引力场中测试粒子静质量降为0时，如光子，在时空运动的轨迹。也就是光锥本身。
 
 
 \section{史瓦西黑洞性质}
@@ -106,7 +105,7 @@
         0&=-\left(1-\frac{2MG}{c^{2}r}\right)\left(c\frac{dt}{d\lambda}\right)^{2}+\left(1-\frac{2MG}{c^{2}r}\right)^{-1}\left(\frac{dr}{d\lambda}\right)^{2}+r^{2}\left(\frac{d\phi}{d\lambda}\right)^{2}
     \end{split}
 \end{equation}
-根据哈密顿原理，我们有两个在时间维度$t$和$\phi$维度的运动常量，
+根据哈密顿原理，我们有两个在时间维度$t$和$\phi$维度的运动常量，其中$E$是粒子的能量，$L$是粒子的角动量，$m_0$是粒子的质量，
 \begin{equation}
     \begin{split}
         \left(1-\frac{2GM}{c^{2}r}\right)c^{2}\frac{dt}{d\lambda}&=\frac{E}{m_{0}}\\
@@ -129,7 +128,7 @@
 \begin{equation}
     \frac{dr}{d\lambda}=\frac{dr}{d\phi}\frac{d\phi}{d\lambda}=\frac{dr}{d\phi}\frac{L}{r^{2}}
 \end{equation}
-仿射参数$\lambda$，
+消去仿射参数$\lambda$，
 \begin{equation}
     \left(\frac{dr}{d\phi}\right)^{2}+r^{2}-\frac{2GM}{c^{2}}r=\frac{r^{4}}{L^{2}}\frac{E^{2}}{c^{2}}
 \end{equation}
@@ -174,14 +173,14 @@
 其中$\vec{r}$是粒子的方向向量，$\vec{p}$是粒子的动量向量，光子没有静质量，所以我们得到光子的总能量是光子的动量$E_{kinetic}$与光子势能$E_{potential}$。这样我们就得到了发射距离$r$、发射角$\theta$与撞击参数$b$的关系。
 
 \paragraph{圆周轨道}
-从这个关系式\eqref{eq:impact_param}中，令光子的发射角度$\theta=\frac{\pi}{2}$可以得到光子的圆周轨道
+从这个关系式\eqref{eq:impact_param}中，令光子的发射角度$\theta=\frac{\pi}{2}$可以得到光子的圆周轨道对应的撞击参数，光子在史瓦西时空只有$r=3M$这一个不稳定圆周轨道。
 \begin{equation*}
     \begin{split}
         \frac{b\sqrt{1-\frac{r_{s}}{r}}}{r}&=\sin\theta\\
         b&=\frac{3\sqrt{3}}{2}r_{s}\label{eq:circular_orbit}
     \end{split}
 \end{equation*}
-光子在史瓦西时空只有$r=3M$这一个不稳定圆周轨道。
+
 
 \subsection{方位角积分图像}
 设$r_0$为光子的出发距离，$r_1$为光子的最终距离，$r_3$为光子轨道近点，$\theta$为发射角度。$\Delta r$轴的前半部分(0-0.5)是光子发射点$r_0$到光子轨道近点$r_3$的线性比例距离，后半部分是近点$r_3$到设定的积分终点$r_1$的线性比例距离。函数横轴是分两段线性绘制的。横轴0.5处为轨道近点。纵轴$\Delta\phi$是积分原点$r_0$到$r$的积分，单位为弧度。
@@ -198,6 +197,7 @@
         \caption{$r_0=40M$, $r_1=400M$, $\theta=\frac{\pi}{10}$}\label{dphi_2} % label 用来在文中索引
     \end{subfigure}
 \end{figure}
+可以看出越接近轨道近点$r_3$，粒子的偏转速度越快。
 
 \subsection{轨道模拟}
 假定光线在赤道面上运动，将三维运动简化为二维。中心天体半径为史瓦西半径$r_s=2M$。
@@ -231,10 +231,11 @@
         \caption{$r_0=10M$, $b=\sqrt{26.998}$光子被捕获}\label{dphi_2} % label 用来在文中索引
     \end{subfigure}
 \end{figure}
+
 以上情形适用于光子发射距离大于3M，小于3M的情形这里不再详述。
 
 \paragraph{可能进入相机的光线}
-下图描绘了一个在距离黑洞5M，斜$\ang{45}$角面向黑洞，拥有$\ang{90}$视场的相机所能获取的光线范围。相机可以获得平面内来自任意方向的光线，来自相机背后的光线会被压缩在一片很小的区域。
+下图描绘了一个在距离黑洞5M，斜$\ang{45}$角面向黑洞，拥有$\ang{90}$视场的相机所能获取的光线范围。相机可以获得平面内来自任意方向的光线，来自相机背后的光线会被压缩在一片很小的区域中。
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{images/camera_view_orbit.pdf}

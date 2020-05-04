@@ -39,25 +39,11 @@
 \setlength{\parskip}{0em}
 
 % 中文摘要正文从这里开始
-在纯粹天体物理的研究方面，相对论宇宙的光线追踪方程几十年前就已经完善了。但是缺乏针对人视觉的高质量的渲染图，导致黑洞的视觉效果还停留在科学家的草稿里。在图形学方面，影视特效（离线渲染）已经开始了非平直时空的光线追踪渲染。主要研究方向就是在已有的物理模型基础上构建人眼所应看到的影像。
+广义相对论是20世纪最伟大的发现之一，它描述了有质量的物体可以扭曲时空。爱丁顿通过观测掠过太阳的光线偏转，第一个验证了广义相对论。要具象化时空的弯曲，可以通过观测光线的路径来间接反映时空的扭曲程度。
 
-2009年的电影《星际迷航》中描绘的黑洞是一个扁平的圆环，
-2014年的电影《星际穿越》第一次将球形的黑洞（视界）搬上
-荧幕，从那时候起影视特效开始认识到平直空间不能用于描绘
-大尺度宇宙，2017年的科幻剧《星际迷航：发现号》也开始使
-用球状的黑洞。
-当很多人通过影视作品了解到黑洞真正的样子后，就不能再用
-老旧刻板的印象来刻画黑洞了。离线渲染方面，一向追求真实
-的电影特效刚刚开始接受非平直时空的渲染，还没有完善的基
-于相对论的离线渲染解决方案。实时渲染方面，英伟达最新推
-出了RTX系列显卡专门在芯片上分配了一大片区域专门用于光
-线追踪的计算。光线追踪专用核心在消费级显卡上还是首次出
-现。这意味着实时渲染方法将从有三十年历史的光栅化
-（rasterization）向路径追踪（path-tracing）转变，也就是
-平直时空的光线追踪。实时渲染在非平直时空的光线追踪才还
-没有起步。
+本文利用广义相对论推导出的史瓦西黑洞光子测地线方程，在史瓦西黑洞周围进行光线追踪，生成易于理解的黑洞图像，探讨黑洞周围光线扭曲的特点。本实现不只适用于黑洞，也可以适用于任何不自转不带电荷的天体，比如太阳。本设计实现了一个CPU光线追踪渲染器，并尝试了GPU渲染，配合输入参数生成对应的中心天体周围的光线扭曲图像。
 
-\vspace{4ex}\noindent\textbf{\heiti 关键词：本科生，毕业设计（论文），光线追踪，相对论，黑洞，测地线}
+\vspace{4ex}\noindent\textbf{\heiti 关键词：本科生；毕业论文；光线追踪；相对论；黑洞；测地线}
 \newpage
 
 % 英文摘要章节
@@ -81,9 +67,10 @@
 \setlength{\parskip}{0em}
 
 % 英文摘要正文从这里开始
-In order to study……
+General relativity is the greatest dicovery of 20th century, it described that a massive object can bend spacetime. Eddington is the first to prove this theory by observing starlight bent when skim over the sun. One can visualize a curved spacetime by observing path taken by light near the central body.
 
-\textcolor{blue}{Abstract 正文设置成每段落首行缩进 2 字符，字体：Times New Roman，字号：小四，行距：固定值 22 磅，间距：段前、段后均为 0 行。阅后删除此段。}
+This article utilize the null geodesic equation that derived from general relativity to raytrace light ray near a blackhole, and generate easy-to-understand blackhole image, and summarize some characteristics of the bending of light. This implementation is not only for blackhole but also any non-rotating non-charged celestial bodies, like the sun. This design implement a CPU raytracer, and tried to use GPU for rendering that generate blackhole image based on input parameters.
 
-\vspace{3ex}\noindent\textbf{Undergraduate, Graduation Project (Thesis), Ray Tracing, Relativity, Blackhole, Geodesic}
+
+\vspace{3ex}\noindent\textbf{Undergraduate; Graduation Thesis; Raytracing; Relativity; Blackhole; Geodesic}
 \newpage
