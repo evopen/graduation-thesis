@@ -276,3 +276,5 @@ TSWLatexianTemp*
 
 # End of https://www.gitignore.io/api/latex
 *.docx
+
+**/*Zone.Identifier

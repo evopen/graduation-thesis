@@ -20,48 +20,43 @@
 % 第一章节
 
 \chapter{史瓦西黑洞物理}
-\section{黑洞简介}
-\subsection{黑洞是什么}
-黑洞是一片引力强大到连光都无法逃脱的区域\cite{what_is_black_hole}。银河系的中心就是一个质量为太阳430万倍的黑洞\cite{galactic_center_bh}，几乎所有的星系中心都是一个超大质量的黑洞。
-\subsection{奇点}
-黑洞的中心是一个密度无穷大的奇点，奇点的时空也无限扭曲。黑洞奇点是造成时空扭曲并形成黑洞视界的根源。
-\subsection{事件视界}
-黑洞的视界是使黑洞称为黑洞的区域，视界以内的信息都无法向外传递，因为没有向外的路径存在。本文研究的限制在视界以外的区域(exterior)。
-\subsection{引力透镜}
-黑洞（事件视界）根据无毛定理，任何信息都不能从视界上发射出来\footnote{不考虑量子力学}，导致黑洞本身是不能被看到的。但黑洞会扭曲周围的时空，通过观察周围物质的运动可以「看」到黑洞。黑洞就像一个圆形或者近似圆形透镜，会使远处传来的平行光产生偏折。
 
-\section{描述弯曲的时空}
-\subsection{时间与空间}
-狭义相对论开始，时间与空间在洛伦兹变换下被密切的关联起来。从光速不变原理引出长度收缩与时间膨胀的现象。闵可夫斯基时空将时间作为坐标的一个维度，构建了一个四维的坐标系$\left(ct,x,y,z\right)$。刘慈欣在三体中写道，「光锥之内就是命运」\cite{three-body}，即是说你所在时空所有光锥之外的事件都与你无关。
+\section{史瓦西黑洞}
+史瓦西黑洞是一个不自转不带电的天体，相对之下克尔黑洞是有角动量不带电的天体。史瓦西黑洞是最简单的黑洞，但它拥有物理学中最重要的性质。
 
-\subsection{黎曼几何}
-闵可夫斯基时空是一个平直的时空，仅适用于狭义相对论。广义相对论中，时空不再是平直的。要描述一个扭曲的时空，就要用到非欧几何。
+如果把太阳压缩到太阳的史瓦西半径（$\approx3km$）那太阳就是一个史瓦西黑洞，根据高斯通量理论，在太阳的半径之外的时空弯曲程度与同等太阳质量的史瓦西黑洞是一样的。地球的史瓦西半径是9mm，也就是说如果把地球压缩到半径9mm，那地球也是一个史瓦西黑洞。
 
-\subsection{测地线}
-\paragraph{什么是测地线}
-测地线是黎曼流形中用于描述两点之间最短路径的曲线，测地线是曲面微分后的最短路径，不是宏观的两点最短路径。测地线是黎曼流形中的直线。测地线应用到非平直时空主要是两种类型。
-\paragraph{Timelike 测地线}
-光锥之内的测地线称为Timelike 测地线，是有静质量的物体在时空中自由落体所走的路径。
-\paragraph{Null 测地线}
-当引力场中测试粒子静质量降为0时，如光子，在时空运动的轨迹。也就是光锥本身。
-
-
-\section{史瓦西黑洞性质}
-史瓦西度规是一个具有对称性的时空，使用四维球坐标系$\left(ct,r,\theta,\phi\right)$.
-
-史瓦西黑洞具有如下性质:
+史瓦西度规是一个具有对称性的时空，具有如下性质:
 \begin{enumerate}
-    \item 史瓦西黑洞是一个不旋转、不带电荷的黑洞
-    \item 史瓦西度规是一个球对称物体对时空造成的影响
-    \item 史瓦西时空是球对称的
-    \item 史瓦西度规不随时间$t$变化
+    \item 史瓦西黑洞是一个不旋转、不带电荷的黑洞；
+    \item 史瓦西度规是一个球对称物体对时空造成的影响；
+    \item 史瓦西时空是球对称的；
+    \item 史瓦西度规不随时间$t$变化。
 \end{enumerate}
 
 根据时空的对称性，选取球坐标系$\left(ct,r,\theta,\phi\right)$，也称史瓦西坐标。是显而易见的。
 
+\section{时间与空间}
+狭义相对论开始，时间与空间在洛伦兹变换下被密切的关联起来。从光速不变原理引出长度收缩与时间膨胀的现象。
 
-\section{史瓦西度规与测地线方程}
-\subsection{度规张量}
+\begin{enumerate}
+    \item 闵可夫斯基时空 \\ 闵可夫斯基时空将时间作为坐标的一个维度，构建了一个四维的坐标系$\left(ct,x,y,z\right)$。当物体在空间中保持不动的时候，时间维$ct$则会每一时刻都以光速向前行走。
+    \item 光锥 \\ 当把空间维度简化为$(x,y)$，并使纵轴为时间维$ct$，构建三维坐标系$(ct,x,y)$。光线因为速度不变，其轨迹会在这个坐标系纵轴上下形成两个圆锥，就是光锥。刘慈欣在三体中写道，“光锥之内就是命运”\cite{three-body}，即是说你所在时空所有光锥之外的事件都与你无关。在黑洞附近，光锥会发生扭曲。\begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{images/light_cone.png}
+        \caption{光锥\cite{light_cone}}\label{fig:light_cone} % label 用来在文中索引
+    \end{figure}
+    
+    \item 测地线 \\ 闵可夫斯基时空是一个平直的时空，仅适用于狭义相对论。广义相对论中，时空不再是平直的。要描述一个扭曲的时空，就要用到非欧几何。测地线是黎曼几何中用于描述两点之间最短路径的曲线，测地线是曲面微分后的最短路径，不是宏观的两点最短路径。测地线是黎曼流形中的直线。测地线应用到非平直时空主要是两种类型：
+    \begin{enumerate}
+        \item Timelike测地线 \\ 光锥之内的测地线称为Timelike 测地线，是有静质量的物体在时空中自由落体所走的路径。
+        \item Null测地线 \\ 当引力场中测试粒子静质量降为0时，如光子，在时空运动的轨迹。也就是光锥本身。
+    \end{enumerate}
+\end{enumerate}
+
+
+
+\section{史瓦西度规}
 度规用于衡量时空的长度，四维时空的度规是一个$4\times4$对称矩阵。
 \begin{equation}
     \begin{split}
@@ -77,7 +72,6 @@
     R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}+\Lambda g_{\mu\nu}=\frac{8\pi G}{c^{4}}T_{\mu\nu}
 \end{equation}
 
-\subsection{史瓦西度规}
 略过度规的求解过程，史瓦西度规以及求解所需的克氏符可以从这篇目录\cite{mueller_catalogue_2010}上获得。
 史瓦西度规有如下形式，
 \begin{equation}
@@ -85,7 +79,9 @@
 \end{equation}
 其中$M$是黑洞的质量, $G$是引力常数, $c$是真空光速。
 
-对于无质量的粒子（光子）我们有 Null 测地线满足，四速度张量积和为0，
+\section{光子测地线方程的推导}
+
+对于无质量的粒子（光子）有 Null 测地线满足，四速度张量积和为0，
 \begin{equation}
     g_{\mu\nu}u^{\mu}u^{\nu}=u^{\mu}u_{\mu}=0
 \end{equation}
@@ -102,10 +98,10 @@
 因为史瓦西度规是一个球对称时空，粒子的运动可以简化成单一平面上的运动。令$\theta=\frac{\pi}{2}$, 将粒子的运动固定在赤道面上，则$\frac{d\theta}{d\lambda}=0$, 带入得,
 \begin{equation}
     \begin{split}
-        0&=-\left(1-\frac{2MG}{c^{2}r}\right)\left(c\frac{dt}{d\lambda}\right)^{2}+\left(1-\frac{2MG}{c^{2}r}\right)^{-1}\left(\frac{dr}{d\lambda}\right)^{2}+r^{2}\left(\frac{d\phi}{d\lambda}\right)^{2}
+        0&=-\left(1-\frac{2MG}{c^{2}r}\right)\left(c\frac{dt}{d\lambda}\right)^{2}+\left(1-\frac{2MG}{c^{2}r}\right)^{-1}\left(\frac{dr}{d\lambda}\right)^{2}+r^{2}\left(\frac{d\phi}{d\lambda}\right)^{2}\label{eq:restrict_to_equatorial_plane}
     \end{split}
 \end{equation}
-根据哈密顿原理，我们有两个在时间维度$t$和$\phi$维度的运动常量，其中$E$是粒子的能量，$L$是粒子的角动量，$m_0$是粒子的质量，
+根据哈密顿原理，有两个在时间维度$t$和$\phi$维度的运动常量，其中$E$是粒子的能量，$L$是粒子的角动量，$m_0$是粒子的质量，
 \begin{equation}
     \begin{split}
         \left(1-\frac{2GM}{c^{2}r}\right)c^{2}\frac{dt}{d\lambda}&=\frac{E}{m_{0}}\\
@@ -138,27 +134,26 @@
 \end{equation}
 在这个关系式中，对$r$积分就能得到赤道面上方位角$\phi$的变化量。
 测地线方程的图像类似下图，光子越接近中心天体，时空弯曲越大，偏转角度越大，
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics{images/geodesic.eps}
     \caption{$b=13$时测地线函数图像}\label{fig:geodesic} % label 用来在文中索引
 \end{figure}
 
 \section{赤道面光线追踪}
-\subsection{Convention}
-我们有常量$G$与$c$，设$G=c=1$，方程的长度单位为黑洞质量$\frac{GM}{c^2}=M$，史瓦西半径为$2M$。
+有了光子的测地线方程，光子的运动轨迹就确定了。根据史瓦西黑洞的对称性，光线是在一个平面上运动的，而且这个平面是过原点的。在上面的推导中\ref{eq:restrict_to_equatorial_plane}已经将光子的运动限制在了赤道平面$\theta=\nicefrac{\pi}{2}$，所以先在赤道面上进行二维的光线追踪，再推广到三维。有常量$G$与$c$，设$G=c=1$，方程的长度单位为黑洞质量$\frac{GM}{c^2}=M$，史瓦西半径$r_s$为$2M$。
 
 \subsection{光子轨道近点(Closest Approach)}
-测地线方程\eqref{eq:geodesic}有奇点，是光子轨道的近点 (Closest Approach)，函数在近点不再连续，所以我们需要计算近点$r3$，
+测地线方程\eqref{eq:geodesic}有奇点，是光子轨道的近点 (Closest Approach)，函数在近点不再连续，所以需要计算近点$r_3$，
 \begin{equation}
     b=\frac{r_3}{\sqrt{1-\frac{r_s}{r_3}}}\label{eq:r3}
 \end{equation}
 这是一个三次方程，需要根据光子的发射距离$r$决定方程的根，其中$r_s=\frac{2GM}{c^2}$为史瓦西半径。积分路径上第一个不连续的点就是轨道的近点。
 
-\subsection{撞击参数与光子发射角}
-光线是从光源传向镜头，被镜头捕捉后成像。但传统光线追踪是逆向追踪，光线从镜头出发，根据光线在镜头上的位置，以镜头上的不同角度散开，然后与远处的物体求交点。我们需要的起始参数是光线的相对于世界坐标的发射角度。
+\subsection{撞击参数与光子发射角的关系}
+光线是从光源传向镜头，被镜头捕捉后成像。但传统光线追踪是逆向追踪，光线从镜头出发，根据光线在镜头上的位置，以镜头上的不同角度散开，然后与远处的物体求交点。需要的起始参数是光线的相对于世界坐标的发射角度。
 
-从测地线方程中可以看出撞击参数是唯一决定无质量粒子的运动轨迹的参数。我们要获得粒子运动轨迹与粒子发射角度、粒子发射距离的关系，需要重新推导这个关系式。
+从测地线方程中可以看出撞击参数是唯一决定无质量粒子的运动轨迹的参数。要获得粒子运动轨迹与粒子发射角度$\theta$、粒子发射距离$r$的关系，需要重新推导这个关系式。
 撞击参数$b$有如下定义，
 \begin{equation}
     b=\frac{Lc}{E}
@@ -170,21 +165,20 @@
         b&=\frac{Lc}{E}\\&=\frac{\vec{r}\times\vec{p}c}{E_{kinetic}+E_{Potential}}\\&=\frac{rp\sin\theta c}{hf+\left(\sqrt{1-\frac{r_{s}}{r}}-1\right)hf}\\&=\frac{rp\sin\theta c}{pc+\left(\sqrt{1-\frac{r_{s}}{r}}-1\right)pc}\\b&=\frac{r\sin\theta}{\sqrt{1-\frac{r_{s}}{r}}}\label{eq:impact_param}
     \end{split}
 \end{equation}
-其中$\vec{r}$是粒子的方向向量，$\vec{p}$是粒子的动量向量，光子没有静质量，所以我们得到光子的总能量是光子的动量$E_{kinetic}$与光子势能$E_{potential}$。这样我们就得到了发射距离$r$、发射角$\theta$与撞击参数$b$的关系。
+其中$\vec{r}$是粒子的方向向量，$\vec{p}$是粒子的动量向量，光子没有静质量，所以得到光子的总能量是光子的动量$E_{kinetic}$与光子势能$E_{potential}$。这样就得到了发射距离$r$、发射角$\theta$与撞击参数$b$的关系。
 
-\paragraph{圆周轨道}
 从这个关系式\eqref{eq:impact_param}中，令光子的发射角度$\theta=\frac{\pi}{2}$可以得到光子的圆周轨道对应的撞击参数，光子在史瓦西时空只有$r=3M$这一个不稳定圆周轨道。
-\begin{equation*}
+\begin{equation}
     \begin{split}
         \frac{b\sqrt{1-\frac{r_{s}}{r}}}{r}&=\sin\theta\\
         b&=\frac{3\sqrt{3}}{2}r_{s}\label{eq:circular_orbit}
     \end{split}
-\end{equation*}
+\end{equation}
 
 
 \subsection{方位角积分图像}
 设$r_0$为光子的出发距离，$r_1$为光子的最终距离，$r_3$为光子轨道近点，$\theta$为发射角度。$\Delta r$轴的前半部分(0-0.5)是光子发射点$r_0$到光子轨道近点$r_3$的线性比例距离，后半部分是近点$r_3$到设定的积分终点$r_1$的线性比例距离。函数横轴是分两段线性绘制的。横轴0.5处为轨道近点。纵轴$\Delta\phi$是积分原点$r_0$到$r$的积分，单位为弧度。
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{.5\textwidth}
         \centering
@@ -196,6 +190,7 @@
         \includegraphics[width=.8\linewidth]{images/dphi_2.eps}
         \caption{$r_0=40M$, $r_1=400M$, $\theta=\frac{\pi}{10}$}\label{dphi_2} % label 用来在文中索引
     \end{subfigure}
+    \caption{不同发射距离与发射角的积分图像}
 \end{figure}
 可以看出越接近轨道近点$r_3$，粒子的偏转速度越快。
 
@@ -230,11 +225,10 @@
         \includegraphics[width=.9\linewidth]{images/photon_sphere_orbit_2.pdf}
         \caption{$r_0=10M$, $b=\sqrt{26.998}$光子被捕获}\label{dphi_2} % label 用来在文中索引
     \end{subfigure}
+    \caption{光子的逃离轨道与坠入轨道}
 \end{figure}
 
-以上情形适用于光子发射距离大于3M，小于3M的情形这里不再详述。
 
-\paragraph{可能进入相机的光线}
 下图描绘了一个在距离黑洞5M，斜$\ang{45}$角面向黑洞，拥有$\ang{90}$视场的相机所能获取的光线范围。相机可以获得平面内来自任意方向的光线，来自相机背后的光线会被压缩在一片很小的区域中。
 \begin{figure}[H]
     \centering

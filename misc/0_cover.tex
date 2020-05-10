@@ -24,8 +24,9 @@
 % Underline new command for student information
 % Usage: \dunderline[<offset>]{<line_thickness>}
 \newcommand\dunderline[3][-1pt]{{%
-  \setbox0=\hbox{#3}
-  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+      \setbox0=\hbox{#3}
+      \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+
 
 % Cover Page
 \begin{titlepage}
@@ -36,35 +37,39 @@
 
   \vspace*{-3mm}
 
-  \zihao{-0}\textbf{\ziju{0.12}\songti{本科生毕业设计（论文）}}
+  %\zihao{-0}\textbf{\ziju{0.12}\songti{本科生毕业设计（论文）}}
 
   \vspace{16mm}
 
-  \zihao{2}\textbf{\xihei\thesisTitle}
+  \zihao{1}\textbf{\songti\thesisTitle}
 
   \vspace{3mm}
 
   \begin{spacing}{1.2}
-    \zihao{3}\selectfont{\textbf{\thesisTitleEN}}
+    \zihao{1}\selectfont{\textbf{\thesisTitleEN}}
   \end{spacing}
 
   \vspace{15mm}
 
   \flushleft
-  \begin{spacing}{1.8}
-    \hspace{27mm}\songti\zihao{3}\selectfont{学\hspace{11mm}院：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\deptName}}}
+  \begin{spacing}{2.2}
+    \hspace{10mm}\heiti\zihao{-3}\selectfont{学\hspace{11mm}院：\dunderline[-10pt]{1pt}{\makebox[100mm][c]{\deptName}}}
 
-    \hspace{27mm}\songti\zihao{3}\selectfont{专\hspace{11mm}业：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\majorName}}}
+    \hspace{10mm}\heiti\zihao{-3}\selectfont{专\hspace{11mm}业：\dunderline[-10pt]{1pt}{\makebox[100mm][c]{\majorName}}}
 
-    \hspace{27mm}\songti\zihao{3}\selectfont{学生姓名：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\yourName}}}
+    \hspace{10mm}\heiti\zihao{-3}\selectfont{姓\hspace{11mm}名：\dunderline[-10pt]{1pt}{\makebox[35mm][c]{\yourName}}}
+    \hspace{0mm}\heiti\zihao{-3}\selectfont{学\hspace{11mm}号：\dunderline[-10pt]{1pt}{\makebox[35mm][c]{\yourStudentID}}}
 
-    \hspace{27mm}\songti\zihao{3}\selectfont{学\hspace{11mm}号：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\yourStudentID}}}
-
-    \hspace{27mm}\songti\zihao{3}\selectfont{指导教师：\dunderline[-10pt]{1pt}{\makebox[78mm][c]{\mentorName}}}
+    \hspace{10mm}\heiti\zihao{-3}\selectfont{指导老师：\dunderline[-10pt]{1pt}{\makebox[35mm][c]{\mentorName}}}
+    \hspace{0mm}\heiti\zihao{-3}\selectfont{职\hspace{11mm}称：\dunderline[-10pt]{1pt}{\makebox[35mm][c]{讲师}}}
   \end{spacing}
 
-  \vspace{25mm}
+  \vspace{50mm}
+  \centering
+  \zihao{5}\heiti{中国·珠海}
+
+  \vspace{5mm}
 
   \centering
-  \zihao{3}\ziju{0.5}\songti{\today}
+  \zihao{5}\heiti{二〇二〇年五月}
 \end{titlepage}

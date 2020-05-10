@@ -21,7 +21,7 @@
 
 % 章节支持、单面打印：ctexbook
 \documentclass[UTF8,AutoFakeBold,AutoFakeSlant,zihao=-4,oneside,openany]{ctexbook}
-\usepackage[a4paper,left=3cm,right=2.6cm,top=3.5cm,bottom=2.9cm]{geometry}
+\usepackage[a4paper,left=2.6cm,right=2.6cm,top=3.5cm,bottom=2.9cm]{geometry}
 % 目前 29mm 最接近 Word 排版
 \usepackage{xeCJK}
 \usepackage{titletoc}
@@ -49,6 +49,21 @@
 \usepackage{siunitx}
 \usepackage{nicefrac}
 \usepackage{tikz-3dplot}
+\usepackage{CJKnumb}
+\usetikzlibrary{arrows.meta}
+
+\tikzset{%
+  >={Latex[width=2mm,length=2mm]},
+  % Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw=black,
+                           minimum width=4cm, minimum height=1cm,
+                           text centered, font=\sffamily},
+  activityStarts/.style = {base, fill=blue!30},
+       startstop/.style = {base, fill=red!30},
+    activityRuns/.style = {base, fill=green!30},
+         process/.style = {base, minimum width=2.5cm, fill=orange!15,
+                           font=\ttfamily},
+}
 
 
 % 设置参考文献编译后端为 biber，引用格式为 GB/T7714-2015 格式
@@ -91,7 +106,7 @@
 
   \fancyhf{}
   % 定义页眉、页码
-  \fancyhead[C]{\zihao{4}\ziju{0.08}\songti{北京理工大学珠海学院2020届本科生毕业设计（论文）}}
+  \fancyhead[C]{\zihao{5}\ziju{0.08}\songti{北京理工大学珠海学院2020届本科生毕业设计}}
   \fancyfoot[C]{\songti\zihao{5} \thepage}
   % 页眉分割线稍微粗一些
   \renewcommand{\headrulewidth}{0.6pt}
@@ -171,18 +186,18 @@
 \setlength{\belowcaptionskip}{9pt}
 
 % 设置图片的 caption 格式
-\renewcommand{\thefigure}{\thechapter-\arabic{figure}}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
 \captionsetup[figure]{font=small,labelsep=space}
 
 % 设置表格的 caption 与 table 之间的垂直距离
 \captionsetup[table]{skip=2pt}
 
 % 设置表格的 caption 格式
-\renewcommand{\thetable}{\thechapter-\arabic{table}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
 \captionsetup[table]{font=small,labelsep=space}
 
 % 设置数学公式编号格式
-\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
+\renewcommand{\theequation}{式\arabic{chapter}.\arabic{equation}}
 
 % 文档开始
 \begin{document}
@@ -212,13 +227,14 @@
 \input{chapters/1_chapter1.tex}
 \input{chapters/2_chapter2.tex}
 \input{chapters/3_chapter3.tex}
+\input{chapters/4_chapter4.tex}
 
 % 在这里添加第二章、第三章……TeX 文件的引用
 % \input{chapters/2_chapter2.tex}
 % \input{chapters/3_chapter3.tex}
 
 % 结论：在结论相应的 TeX 文件处进行结论部分的撰写
-\input{misc/3_conclusion.tex}
+%\input{misc/3_conclusion.tex}
 % 参考文献：如无特殊需要，参考文献相应的 TeX 文件无需改动，添加参考文献请使用 BibTeX 的格式
 %   添加至 misc/ref.bib 中，并在正文的相应位置使用 \cite{xxx} 的格式引用参考文献
 \input{misc/4_reference.tex}
